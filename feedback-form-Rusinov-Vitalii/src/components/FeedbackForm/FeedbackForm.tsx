@@ -90,7 +90,7 @@ const FeedbackForm: React.FC = () => {
 
   // Функция для сабмита
   const handleSubmit = (values: FeedbackFormValues) => {
-    // Данные для отправки запроса
+    // Данные для отправки запроса в формате FormData
     // const formData = new FormData();
     // formData.append("firstName", values.firstName || "");
     // formData.append("lastName", values.lastName || "");
@@ -101,7 +101,7 @@ const FeedbackForm: React.FC = () => {
     //   formData.append("file", values.file);
     // }
 
-    // Данные для логирования
+    // Данные для логирования в формате JSON
     const formattedValues = {
       ...values,
       file: values.file
